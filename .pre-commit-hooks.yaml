@@ -1,0 +1,6 @@
+- id: terraform-clean-syntax
+  name: clean terraform syntax
+  entry: terraform-clean-syntax
+  language: golang
+  types: [terraform]
+  require_serial: true
