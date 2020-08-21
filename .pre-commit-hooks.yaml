@@ -1,6 +1,14 @@
 - id: terraform-clean-syntax
-  name: clean terraform syntax
+  name: terraform-clean-syntax
+  description: perform some small syntax cleanup steps on Terraform .tf files
   entry: terraform-clean-syntax
   language: golang
+  types: [terraform]
+  require_serial: true
+- id: terraform-clean-syntax-docker
+  name: terraform-clean-syntax (via docker)
+  description: perform some small syntax cleanup steps on Terraform .tf files
+  language: docker
+  entry: /terraform-clean-syntax
   types: [terraform]
   require_serial: true
